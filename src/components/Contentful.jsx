@@ -66,31 +66,19 @@ function Contentful() {
         return (
           <div
             key={entry.fields.bookId}
-            className="border-double border-4 border-black rounded-md p-2 m-1 overflow-hidden shadow-2xl bg-gradient-to-r  from-cyan-600 to-yellow-400 object-cover"
-          >
+            className="border-double border-4 border-black rounded-md p-2 m-1 overflow-hidden shadow-2xl bg-gradient-to-r  from-cyan-600 to-yellow-400 object-cover">
             <img
               src={entry.fields.bookCover[0].fields.file.url}
               alt={entry.fields.bookTitle}
               // width="50%"
               className="h-auto w-44 float-start m-1 pr-3"
             />
-            <h1 className="uppercase text-2xl font-extrabold text-left">
-              {entry.fields.bookTitle}
-            </h1>
+            <h1 className="uppercase text-2xl font-extrabold text-left">{entry.fields.bookTitle}</h1>
 
-            <h2 className="font-medium text-left text-xl">
-              {entry.fields.bookAuthor}
-            </h2>
-            <h3 className="text-left">
-              Genre(s):{" "}
-              {entry.fields.bookGenre.length > 1
-                ? entry.fields.bookGenre.join(", ")
-                : entry.fields.bookGenre}{" "}
-            </h3>
+            <h2 className="font-medium text-left text-xl">{entry.fields.bookAuthor}</h2>
+            <h3 className="text-left">Genre(s): {entry.fields.bookGenre.length > 1 ? entry.fields.bookGenre.join(", ") : entry.fields.bookGenre} </h3>
 
-            <p className="text-justify indent-5 pt-3 pr-2">
-              {entry.fields.bookDescription}
-            </p>
+            <p className="text-justify indent-5 pt-3 pr-2">{entry.fields.bookDescription}</p>
             <br />
           </div>
         );
@@ -107,8 +95,7 @@ function Contentful() {
                 currentPage === index + 1
                   ? "active bg-gray-500 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
                   : "bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
-              }
-            >
+              }>
               {index + 1}
             </button>
           ))}

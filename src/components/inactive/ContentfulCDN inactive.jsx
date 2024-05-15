@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { createClient } from "contentful";
 import { MagnifyingGlass } from "react-loader-spinner";
 import axios from "axios";
 
