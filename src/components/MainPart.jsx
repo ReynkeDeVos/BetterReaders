@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { LiaBookReaderSolid } from "react-icons/lia";
 import Contentful from "./Contentful";
@@ -9,7 +8,7 @@ import Footer from "./Footer";
 function MainPart() {
   return (
     <div>
-      <nav className="bg-gray-600 rounded-md">
+      <nav className="rounded-md bg-gray-600">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -22,10 +21,14 @@ function MainPart() {
                 <div className="flex space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                   <Link className="link" to="/Contentful">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</p>
+                    <p className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                      Home
+                    </p>
                   </Link>
                   <Link className="link" to="/Team">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</p>
+                    <p className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                      Team
+                    </p>
                   </Link>
 
                   {/* <a
