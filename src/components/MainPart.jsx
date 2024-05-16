@@ -35,22 +35,22 @@ function MainPart() {
                     </p>
                   </Link>
                   <Link className="link" to="/Fantasy">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <p className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                       Fantasy
                     </p>
                   </Link>
                   <Link className="link" to="/Horror">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <p className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                       Horror
                     </p>
                   </Link>
                   <Link className="link" to="/Warhammer">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <p className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                       Warhammer
                     </p>
                   </Link>
                   <Link className="link" to="/Science">
-                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                    <p className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                       Science Fiction
                     </p>
                   </Link>

@@ -34,7 +34,7 @@ function Horror() {
         // filtering part
 
         const filtered = response.items.filter((entry) =>
-          entry.fields.bookGenre.includes("Horror")
+          entry.fields.bookGenre.includes("Horror"),
         );
 
         // end filter
@@ -75,19 +75,18 @@ function Horror() {
         return (
           <div
             key={entry.fields.bookId}
-            className="border-double border-4 border-black rounded-md p-2 m-1 overflow-hidden shadow-2xl bg-gradient-to-r  from-cyan-600 to-yellow-400 object-cover"
-          >
+            className="m-1 overflow-hidden rounded-md border-4 border-double border-black bg-gradient-to-r from-cyan-600 to-yellow-400  object-cover p-2 shadow-2xl">
             <img
               src={entry.fields.bookCover[0].fields.file.url}
               alt={entry.fields.bookTitle}
               // width="50%"
-              className="h-auto w-44 float-start m-1 pr-3"
+              className="float-start m-1 h-auto w-44 pr-3"
             />
-            <h1 className="uppercase text-2xl font-extrabold text-left">
+            <h1 className="text-left text-2xl font-extrabold uppercase">
               {entry.fields.bookTitle}
             </h1>
 
-            <h2 className="font-medium text-left text-xl">
+            <h2 className="text-left text-xl font-medium">
               {entry.fields.bookAuthor}
             </h2>
             <h3 className="text-left">
@@ -97,7 +96,7 @@ function Horror() {
                 : entry.fields.bookGenre}{" "}
             </h3>
 
-            <p className="text-justify indent-5 pt-3 pr-2">
+            <p className="pr-2 pt-3 text-justify indent-5">
               {entry.fields.bookDescription}
             </p>
             <br />
@@ -114,10 +113,9 @@ function Horror() {
               onClick={() => handlePageChange(index + 1)}
               className={
                 currentPage === index + 1
-                  ? "active bg-gray-500 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
-                  : "bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
-              }
-            >
+                  ? "active rounded bg-gray-500 px-4 py-2 font-bold text-gray-800 hover:bg-gray-400"
+                  : "rounded bg-gray-300 px-4 py-2 font-bold text-gray-800 hover:bg-gray-400"
+              }>
               {index + 1}
             </button>
           ))}
