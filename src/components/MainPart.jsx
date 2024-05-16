@@ -3,6 +3,10 @@ import { Routes, Route, Link } from "react-router-dom";
 import { LiaBookReaderSolid } from "react-icons/lia";
 import Contentful from "./Contentful";
 import Team from "./Team";
+import Fantasy from "./Fantasy";
+import Horror from "./Horror";
+import Warhammer from "./Warhammer";
+import Science from "./Science";
 import Landing from "./Landing";
 import Footer from "./Footer";
 
@@ -31,6 +35,26 @@ function MainPart() {
                       Team
                     </p>
                   </Link>
+                  <Link className="link" to="/Fantasy">
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                      Fantasy
+                    </p>
+                  </Link>
+                  <Link className="link" to="/Horror">
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                      Horror
+                    </p>
+                  </Link>
+                  <Link className="link" to="/Warhammer">
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                      Warhammer
+                    </p>
+                  </Link>
+                  <Link className="link" to="/Science">
+                    <p className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                      Science Fiction
+                    </p>
+                  </Link>
 
                   {/* <a
                     href="#"
@@ -50,6 +74,10 @@ function MainPart() {
           <Route path="/landing" element={<Landing />} />
           <Route path="/contentful" element={<Contentful />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/fantasy" element={<Fantasy />} />
+          <Route path="/horror" element={<Horror />} />
+          <Route path="/warhammer" element={<Warhammer />} />
+          <Route path="/science" element={<Science />} />
           <Route path="*" element={"Page not found 404"} />
         </Routes>
       </div>
