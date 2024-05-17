@@ -16,10 +16,16 @@ You can check out the live demo of the application at [betterreaders.netlify.app
 
 - A modern browser
 
-### Installation
+### Fork
 
 Clone the repo
 
 ```sh
 git clone git@github.com:ReynkeDeVos/BetterReaders.git
+```
+
+Then install the dependencies with:
+
+```sh
+pnpm i
 ```
