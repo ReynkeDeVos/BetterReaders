@@ -18,7 +18,8 @@ You can check out the live demo of the application at [betterreaders.netlify.app
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone git@github.com:ReynkeDeVos/BetterReaders.git
-   ```
+Clone the repo
+
+```sh
+git clone git@github.com:ReynkeDeVos/BetterReaders.git
+```
